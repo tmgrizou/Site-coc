@@ -1,0 +1,186 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    background-image: url('img/Acceuil/fond.jpg');
+    background-repeat: no-repeat; /* Évite que l'image se répète */
+    background-size: cover; /* L'image occupe tout l'écran */
+    background-position: center; /* Centrer l'image */
+  
+  }
+  
+  header {
+    background-color: #9b2d27;
+    color: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #2c3e50;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+  }
+  
+  /* Style de base du menu */
+/* Style de base du conteneur du menu */
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+/* Bouton hamburger */
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 2000; /* Au-dessus du menu déroulant */
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Les trois barres */
+.menu-button span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Menu déroulant caché par défaut */
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  list-style: none;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+}
+
+/* Liens du menu */
+.menu-dropdown li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-dropdown li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Transformation du bouton hamburger en croix ("X") */
+.menu-button.active span:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+}
+
+.menu-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px;
+}
+
+/* Affichage du menu déroulant lorsque le bouton est actif */
+.menu-button.active + .menu-dropdown {
+  display: block;
+}
+
+
+  /* Section indépendante */
+  .hdv-section {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #d9d6cf;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hdv-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+  }
+  
+  /* Carte HDV */
+  .hdv-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 210px;
+    height: 210px;
+    margin: 0 auto; /* Centrer la carte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hdv-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .hdv-item img {
+    width: 70%;
+    height: auto;
+    object-fit: contain; /* L'image reste propre et proportionnée */
+  }
+  
+  .hdv-item p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #333;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+  }
+  
+  .hdv-item a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+  }
+  
+  .hdv-item a:hover {
+    text-decoration: underline;
+  }
+  

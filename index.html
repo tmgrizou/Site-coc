@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bases Clash of Clans</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Bases Clash of Clans</h1>
+    <p>Choisissez le niveau de votre Hôtel de Ville et explorez les meilleures bases !</p>
+  </header>
+
+  <nav class="menu">
+    <div class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="menu-dropdown">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="hdv4.html">Hôtel de Ville 4</a></li>
+        <li><a href="hdv5.html">Hôtel de Ville 5</a></li>
+        <li><a href="hdv6.html">Hôtel de Ville 6</a></li>
+        <li><a href="hdv7.html">Hôtel de Ville 7</a></li>
+    </ul>
+</nav>
+
+
+  <!-- Section Hôtel de Ville 3 -->
+  <section class="hdv-section">
+    <h2>Hôtel de Ville 4</h2>
+    <div class="hdv-item">
+      <img src="img/acceuil/hdv4.png" alt="Hôtel de Ville 4">
+      <p>Meilleures Village Bases</p>
+      <a href="hdv4.html">Voir les bases</a>
+    </div>
+  </section>
+
+  <!-- Section Hôtel de Ville 4 -->
+  <section class="hdv-section">
+    <h2>Hôtel de Ville 5</h2>
+    <div class="hdv-item">
+      <img src="img/acceuil/hdv5.png" alt="Hôtel de Ville 5">
+      <p>Meilleures Village Bases</p>
+      <a href="hdv5.html">Voir les bases</a>
+    </div>
+  </section>
+
+  <!-- Ajoutez d'autres sections pour les autres HDV -->
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const dropdown = document.querySelector('.menu-dropdown');
+
+    menuButton.addEventListener('click', () => {
+        menuButton.classList.toggle('active'); // Ajoute/enlève la classe "active"
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
+
+</body>
+</html>

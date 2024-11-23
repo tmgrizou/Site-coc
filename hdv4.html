@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Bases hôtel de ville niveau 4</title>
+</head>
+<body>
+    <header>
+        <h1>Bases hôtel de ville niveau 4</h1>
+        <p>Parcourez les meilleurs bases pour l'hôtel de ville 4 </p>
+    </header>
+
+    <nav class="menu">
+        <div class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-dropdown">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="hdv4.html">Hôtel de Ville 4</a></li>
+            <li><a href="hdv5.html">Hôtel de Ville 5</a></li>
+            <li><a href="hdv6.html">Hôtel de Ville 6</a></li>
+            <li><a href="hdv7.html">Hôtel de Ville 7</a></li>
+        </ul>
+    </nav>
+    
+
+    <section class="bases-de-farm-hdv4">
+      <h1>Découvrez les meilleures bases de farm pour hôtel de ville 4</h1>
+      <div class="hdv-bases-container">
+        <div class="hdv-bases">
+            <img src="img/Hdv4/base1.jpg" alt="Base 1">
+            <p>Village HDV 4</p>
+            <a href="https://link.clashofclans.com/fr/?action=OpenLayout&id=TH4%3AHV%3AAAAAMAAAAAJCsRY-GPzsfiZhToZZRzR1" target="_blank">Lien de la base</a>
+        </div>
+
+        <div class="hdv-bases">
+            <img src="img/Hdv4/base2.jpg" alt="Base 2">
+            <p>Village HDV 4</p>
+            <a href="https://link.clashofclans.com/fr/?action=OpenLayout&id=TH4%3AWB%3AAAAAMAAAAAJCsG4VowrX1zmcYRjMg_EN" target="_blank">Lien de la base</a>
+        </div>
+
+        <!-- Ajout de nouvelles bases -->
+        <!-- Ajoute autant de divs que nécessaire pour d'autres bases -->
+        <div class="hdv-bases">
+            <img src="img/Hdv4/base3.jpg" alt="Base 3">
+            <p>Village HDV 4</p>
+            <a href="https://link.clashofclans.com/fr/?action=OpenLayout&id=TH4%3AWB%3AAAAAMAAAAAJCquh_lPfw_Isoy8cTPSeb" target="_blank">Lien de la base</a>
+        </div>
+
+        <div class="hdv-bases">
+            <img src="img/Hdv4/base4.jpg" alt="Base 4">
+            <p>Village HDV 4</p>
+            <a href="https://link.clashofclans.com/fr/?action=OpenLayout&id=TH4%3AWB%3AAAAAMAAAAAJCq3KujjMJ2K-VEN-Ve8Os" target="_blank">Lien de la base</a>
+        </div>
+        
+        <div class="hdv-bases">
+            <img src="img/Hdv4/base5.jpg" alt="Base 4">
+            <p>Village HDV 4</p>
+            <a href="https://link.clashofclans.com/fr/?action=OpenLayout&id=TH4%3AWB%3AAAAAMAAAAAJCq4r2ZiuehC4l0yrv3CVd" target="_blank">Lien de la base</a>
+        </div>
+
+        <div class="hdv-bases">
+            <img src="img/Hdv4/base6.jpg" alt="Base 4">
+            <p>Village HDV 4</p>
+            <a href="https://link.clashofclans.com/fr/?action=OpenLayout&id=TH4%3AWB%3AAAAAMAAAAAJCq0UsWSvsmL1iGzOHYQY4" target="_blank">Lien de la base</a>
+        </div>
+
+</section>
+
+<script>
+    const menuButton = document.querySelector('.menu-button');
+    const dropdown = document.querySelector('.menu-dropdown');
+
+    menuButton.addEventListener('click', () => {
+        menuButton.classList.toggle('active'); // Ajoute/enlève la classe "active"
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
+</body>
+</html>
